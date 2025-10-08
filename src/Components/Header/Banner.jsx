@@ -7,8 +7,8 @@ import bannerImg from "../../assets/hero.png";
 const Banner = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center space-y-3">
-        <h1 className="text-6xl font-bold text-center">
+      <div className="flex flex-col justify-center items-center space-y-3 bg-[#F1F5E8]">
+        <h1 className="text-6xl font-bold text-center pt-5 md:pt-7 lg:pt-15">
           We Build <br /> <span className="text-blue-500 ">Productive</span>{" "}
           Apps
         </h1>
@@ -36,7 +36,7 @@ const Banner = () => {
         </div>
       </div>
       {/* Banner image */}
-      <div className="flex justify-center items-center mt-10">
+      <div className="flex justify-center items-center pt-10 px-3 md:px-5 bg-[#F1F5E8]">
         <img src={bannerImg} alt="A Banner Image" />
       </div>
       {/* Banner State */}
