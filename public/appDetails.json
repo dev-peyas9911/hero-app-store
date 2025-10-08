@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://i.ibb.co/fx5pQKT/photosnap.png",
+    "title": "PhotoSnap",
+    "companyName": "Pixelo Labs",
+    "id": 1,
+    "description": "A lightweight photo editor with AI filters and cloud sync.",
+    "size": 42,
+    "reviews": 1280,
+    "ratingAvg": 4.5,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 490 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/yyJvJwL/taskmate.png",
+    "title": "TaskMate",
+    "companyName": "NextGen Apps",
+    "id": 2,
+    "description": "Organize your tasks efficiently with reminders and dark mode.",
+    "size": 28,
+    "reviews": 980,
+    "ratingAvg": 4.2,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 330 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/yRhvdcZ/fitlife.png",
+    "title": "FitLife",
+    "companyName": "WellBeing Inc.",
+    "id": 3,
+    "description": "Track workouts, calories, and sleep with smart suggestions.",
+    "size": 56,
+    "reviews": 2400,
+    "ratingAvg": 4.8,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1340 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/zQyyv4L/newsly.png",
+    "title": "Newsly",
+    "companyName": "GlobeStream Media",
+    "id": 4,
+    "description": "Stay informed with breaking news and personalized articles.",
+    "size": 37,
+    "reviews": 1700,
+    "ratingAvg": 4.3,
+    "downloads": 110000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 560 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/pRxKPHn/eduspark.png",
+    "title": "EduSpark",
+    "companyName": "Learnify Co.",
+    "id": 5,
+    "description": "Interactive courses and quizzes to help you learn faster.",
+    "size": 49,
+    "reviews": 2100,
+    "ratingAvg": 4.7,
+    "downloads": 275000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1060 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/8PfBc4m/shopease.png",
+    "title": "ShopEase",
+    "companyName": "RetailNext",
+    "id": 6,
+    "description": "Smart shopping assistant with price tracking and coupons.",
+    "size": 33,
+    "reviews": 3150,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1680 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/9Yq6tMs/musicify.png",
+    "title": "Musicify",
+    "companyName": "SonicWave Studio",
+    "id": 7,
+    "description": "Stream and download millions of songs ad-free.",
+    "size": 60,
+    "reviews": 4800,
+    "ratingAvg": 4.9,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 950 },
+      { "name": "5 star", "count": 3380 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/x8DRySr/tripgo.png",
+    "title": "TripGo",
+    "companyName": "Wanderly",
+    "id": 8,
+    "description": "Plan trips, book hotels, and explore nearby attractions.",
+    "size": 52,
+    "reviews": 2750,
+    "ratingAvg": 4.4,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 320 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1350 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/XbHLLgx/notekeeper.png",
+    "title": "NoteKeeper",
+    "companyName": "WriteEase Ltd.",
+    "id": 9,
+    "description": "Simple and secure note-taking app with cloud sync.",
+    "size": 24,
+    "reviews": 890,
+    "ratingAvg": 4.1,
+    "downloads": 75000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/gFFkR1C/gameverse.png",
+    "title": "GameVerse",
+    "companyName": "PlayWorld",
+    "id": 10,
+    "description": "Discover and play trending mobile games instantly.",
+    "size": 75,
+    "reviews": 5100,
+    "ratingAvg": 4.8,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3350 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/7r3Yp7r/budgetpro.png",
+    "title": "BudgetPro",
+    "companyName": "FinEdge",
+    "id": 11,
+    "description": "Manage your expenses and set financial goals easily.",
+    "size": 31,
+    "reviews": 1200,
+    "ratingAvg": 4.3,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/L6Lk9Jm/langify.png",
+    "title": "Langify",
+    "companyName": "GlobalLingua",
+    "id": 12,
+    "description": "Learn new languages with interactive lessons and AI chat.",
+    "size": 46,
+    "reviews": 3900,
+    "ratingAvg": 4.9,
+    "downloads": 610000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  }
+]
