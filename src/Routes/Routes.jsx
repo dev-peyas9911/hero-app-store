@@ -5,13 +5,14 @@ import Home from "../Pages/Home/Home";
 import AllApp from "../Pages/AllApp/AllApp";
 import InstallApp from "../Pages/InstalledApp/InstallApp";
 import AppDetails from "../Pages/AppDetails/AppDetails";
+import LoadingSpinner from "../Components/LoadingSpinner/LoadingSpinner";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
     errorElement: <Error></Error>,
-    hydrateFallbackElement: <p>Loading</p>,
+    hydrateFallbackElement: <LoadingSpinner></LoadingSpinner>,
     children: [
       {
         index: true,

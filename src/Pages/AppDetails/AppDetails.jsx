@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router";
 import useApps from "../../Hooks/useApps";
 import { Download, Star, ThumbsUp } from "lucide-react";
@@ -13,12 +13,14 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
+import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner";
 
 const AppDetails = () => {
+  
   const { id } = useParams();
   const { apps, loading } = useApps();
   const app = apps.find((a) => a.id === Number(id));
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingSpinner></LoadingSpinner>;
 
   const {
     title,
@@ -66,7 +68,7 @@ const AppDetails = () => {
                 <span className="font-bold text-xl">{reviews}</span>
               </div>
             </div>
-            <button className="btn btn-success">Install Now ({size}MB)</button>
+            <button className="btn btn-success text-white">Install Now ({size}MB)</button>
           </div>
         </div>
         <hr />
