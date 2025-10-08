@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Home = () => {
+const InstallApp = () => {
     return (
         <div className='px-2 md:px-4 lg:px-20'>
-            Home
+            Installed App
         </div>
     );
 };
 
-export default Home;
+export default InstallApp;
