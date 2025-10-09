@@ -5,3 +5,9 @@
     color: rgb(132, 132, 245);
     text-decoration: underline;
 }
+
+html,
+body,
+#root {
+  height: 100%;
+}

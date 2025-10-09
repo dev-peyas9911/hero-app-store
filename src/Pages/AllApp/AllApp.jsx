@@ -6,7 +6,6 @@ import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner";
 const AllApp = () => {
   const { apps, loading } = useApps();
 
-  console.log("Apps data:", apps);
   const [search, setSearch] = useState("");
   const term = search.trim().toLocaleLowerCase();
 

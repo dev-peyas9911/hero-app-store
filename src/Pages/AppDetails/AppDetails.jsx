@@ -14,9 +14,10 @@ import {
   CartesianGrid,
 } from "recharts";
 import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner";
+import { updateAppList } from "../../utilities/localStorage";
+
 
 const AppDetails = () => {
-  
   const { id } = useParams();
   const { apps, loading } = useApps();
   const app = apps.find((a) => a.id === Number(id));
@@ -31,7 +32,7 @@ const AppDetails = () => {
     reviews,
     ratingAvg,
     downloads,
-    ratings
+    ratings,
   } = app || {};
 
   return (
@@ -44,7 +45,10 @@ const AppDetails = () => {
           </div>
           <div className="flex-1 space-y-5">
             <h2 className="text-4xl font-bold">{title}</h2>
-            <p className="text-[#627382]">Developed by: <span className="text-blue-500 font-bold">{companyName}</span></p>
+            <p className="text-[#627382]">
+              Developed by:{" "}
+              <span className="text-blue-500 font-bold">{companyName}</span>
+            </p>
             <div className="flex gap-10">
               <div className="">
                 <span className="text-green-500">
@@ -68,13 +72,17 @@ const AppDetails = () => {
                 <span className="font-bold text-xl">{reviews}</span>
               </div>
             </div>
-            <button className="btn btn-success text-white">Install Now ({size}MB)</button>
+            <button onClick={()=> updateAppList(app)} className="btn btn-success text-white">
+              Install Now (${size}MB)
+            </button>
           </div>
         </div>
         <hr />
         {/* Recharts */}
         <div className="max-w-11/12 mx-auto py-10">
-          <h2 className="text-3xl font-bold text-center mb-6">Ratings Breakdown</h2>
+          <h2 className="text-3xl font-bold text-center mb-6">
+            Ratings Breakdown
+          </h2>
 
           {ratings && ratings.length > 0 ? (
             <ResponsiveContainer width="100%" height={300}>
@@ -88,16 +96,16 @@ const AppDetails = () => {
               </BarChart>
             </ResponsiveContainer>
           ) : (
-            <p className="text-center text-gray-500">No ratings data available.</p>
+            <p className="text-center text-gray-500">
+              No ratings data available.
+            </p>
           )}
         </div>
         <hr />
         {/* description */}
         <div className="max-w-11/12 mx-auto py-20">
-            <h2 className="text-4xl font-bold mb-3">Description:</h2>
-            <div>
-                {description}
-            </div>
+          <h2 className="text-4xl font-bold mb-3">Description:</h2>
+          <div>{description}</div>
         </div>
       </div>
     </>

@@ -28,14 +28,14 @@ const Navbar = () => {
               <NavLink to="/allapp">Apps</NavLink>
             </li>
             <li>
-              <NavLink to="/installedapp">Installation</NavLink>
+              <NavLink to="/installedapps">Installation</NavLink>
             </li>
           </ul>
         </div>
         <div className="center space-x-4 font-bold hidden lg:block">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/allapp">Apps</NavLink>
-          <NavLink to="/installedapp">Installation</NavLink>
+          <NavLink to="/installedapps">Installation</NavLink>
         </div>
         <div className="end">
           <button className="btn btn-primary flex space-x-1 text-white">
