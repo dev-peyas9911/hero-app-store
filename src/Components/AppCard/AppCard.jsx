@@ -7,7 +7,7 @@ const AppCard = ({ app }) => {
   return (
     <Link to={`/appdetails/${id}`}>
     <div className="w-[320px] bg-white shadow-sm rounded-xl p-4 space-y-2 hover:scale-105 transition ease-in">
-      <div className="w-[50]">
+      <div className="w-full overflow-hidden">
         <img className="w-full h-full object-cover" src={image} alt="" />
       </div>
       <h2 className=" font-bold">
