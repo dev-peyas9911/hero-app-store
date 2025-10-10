@@ -14,3 +14,8 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# Project Details
+App Name: Hero App Store
+description: Hero App Store is your all-in-one platform to explore, install, and manage apps effortlessly. Designed with simplicity and speed in mind, it brings together powerful tools and a clean interface to give users a smooth experience — just like a hero saving the day!
+Technologies: HTML, CSS, tailwind, JavaScript and React

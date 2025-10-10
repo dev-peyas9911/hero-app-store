@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { loadApplist, removeFromApplist } from "../../utilities/localStorage";
+import toast from "react-hot-toast";
+import { Download, Star } from "lucide-react";
 
 const InstalledApps = () => {
   const [applist, setApplist] = useState(() => loadApplist());
   const [sortOrder, setSortOrder] = useState("none");
 
-  if (!applist.length) return <p>No Data Available</p>;
+  if (!applist.length) return <p className="flex justify-center font-bold">No Data Available.  <span className="text-green-500 pl-1">Select an App and Install it!</span></p>;
 
   const sortedItem = (() => {
     if (sortOrder === "size-asc") {
@@ -17,11 +19,12 @@ const InstalledApps = () => {
     }
   })();
 
-  const handleRemove = (id) => {
+  const handleRemove = (id, title) => {
     // remove from localstorage
     removeFromApplist(id);
     // for ui instant update
     setApplist((prev) => prev.filter((p) => p.id !== id));
+    toast.success(`${title} uninstalled successfully!`);
   };
   return (
     <div className=" bg-[#F1F5E8] p-[1px] min-h-full flex flex-col">
@@ -56,7 +59,7 @@ const InstalledApps = () => {
             {sortedItem.map((p) => (
               <div key={p.id} className="bg-white my-10 p-5">
                 <div className="flex flex-col md:flex-row justify-between items-center p-[1px]">
-                  <div className="flex items-center">
+                  <div className="flex items-center gap-3">
                     <div className="w-[80px] h-[80px]">
                       <img
                         className="w-full h-full object-cover"
@@ -64,18 +67,26 @@ const InstalledApps = () => {
                         alt=""
                       />
                     </div>
-                    <div>
-                      <h4>{p.title}</h4>
-                      <div className="flex space-x-3" >
-                        <p>{p.downloads}</p>
-                        <p>{p.ratingAvg}</p>
-                        <p>{p.size}MB</p>
+                    <div className="space-y-2">
+                      <h4 className="font-bold">{p.title}</h4>
+                      <div className="flex space-x-3">
+                        <p className="flex gap-1.5 text-[#00D390]">
+                          <div><Download></Download></div>
+                          <div>{p.downloads}</div>
+                        </p>
+                        <p className="flex gap-1.5 text-[#FF8811]">
+                          <div>
+                            <Star></Star>
+                          </div>
+                          <div>{p.ratingAvg}</div>
+                        </p>
+                        <p className="text-[#627382]">{p.size}MB</p>
                       </div>
                     </div>
                   </div>
                   <div>
                     <button
-                      onClick={() => handleRemove(p.id)}
+                      onClick={() => handleRemove(p.id, p.title)}
                       className="btn btn-success"
                     >
                       Uninstall

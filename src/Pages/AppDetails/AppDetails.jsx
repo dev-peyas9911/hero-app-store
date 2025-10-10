@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useApps from "../../Hooks/useApps";
 import { Download, Star, ThumbsUp } from "lucide-react";
@@ -14,13 +14,19 @@ import {
   CartesianGrid,
 } from "recharts";
 import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner";
-import { updateAppList } from "../../utilities/localStorage";
-
+import { loadApplist, updateAppList } from "../../utilities/localStorage";
+import toast from "react-hot-toast";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
   const app = apps.find((a) => a.id === Number(id));
+  const [installed, setInstalled] = useState(false);
+  useEffect(() => {
+    const list = loadApplist();
+    const alreadyInstalled = list.some((a) => a.id === Number(id));
+    setInstalled(alreadyInstalled);
+  }, [id]);
   if (loading) return <LoadingSpinner></LoadingSpinner>;
 
   const {
@@ -34,6 +40,12 @@ const AppDetails = () => {
     downloads,
     ratings,
   } = app || {};
+
+  const handleInstall = () => {
+    updateAppList(app);
+    setInstalled(true);
+    toast.success(`${title} installed successfully!`);
+  };
 
   return (
     <>
@@ -72,8 +84,14 @@ const AppDetails = () => {
                 <span className="font-bold text-xl">{reviews}</span>
               </div>
             </div>
-            <button onClick={()=> updateAppList(app)} className="btn btn-success text-white">
-              Install Now (${size}MB)
+            <button
+              onClick={handleInstall}
+              disabled={installed}
+              className={`btn ${
+                installed ? "btn-disabled bg-gray-400" : "btn-success"
+              } text-white`}
+            >
+              {installed ? "Installed" : `Install Now (${size}MB)`}
             </button>
           </div>
         </div>
